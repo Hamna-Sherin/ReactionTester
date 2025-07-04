@@ -1,54 +1,29 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .container{
-    width: 150px;
-    height: 150px;
+    position: relative;
+}
+
+#box{
+    width: 200px; 
+    height: 200px;
     margin: 50px;
     background-color: #0a8e8e;
-    animation: testerBox 5s infinite;
+    position:absolute;
 }
 
 h1{
     background-color: #6f7777;
-    padding: 10px 520px;
+    padding: 10px;
     color: white;
+    text-align: center;    
 }
 
 h3{
     background-color: #bdcebe;
-    padding: 10px 200px;
+    padding: 10px;
     color: black;
+    text-align: center;
 }
 
 #box:hover{
     cursor: pointer;
-}
-
-
-
-@keyframes testerBox {
-    0%{
-        transform: translate(0,0);
-    }
-    20%{
-        transform: translate(200px,0);
-    }
-    40%{
-        transform: translate(200px,200px);
-    }
-    60%{
-        transform: translate(-200px,200px);
-    }
-    80% {
-        transform: translate(-200px, 0);
-    }
-    100%{
-        transform: translate(0,0);
-
-    }
-    
 }
